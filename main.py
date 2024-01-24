@@ -99,7 +99,7 @@ def queryMachine(workersIndex, line, outputFile):
                     
                     if not username: return
 
-                    outputFile.write(f"{hostname}\t\t{username}\t\t{ip}")
+                    outputFile.write(f"{hostname}\t\t{username}\t\t{ip}\n")
                 break
             if "ENDOFOUTPUT9" in line and "Write-Host" not in line:
                 break
